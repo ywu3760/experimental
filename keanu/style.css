@@ -1,0 +1,178 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Exo;
+    background-color: black;
+    overflow-x: hidden;
+	user-select: none;
+}
+
+@media screen and (max-width: 999px) and (min-width: 0px) {
+	.header {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-image: url("https://images3.alphacoders.com/103/1033561.jpg");
+		background-size: cover;
+		background-position: right center;
+		background-repeat: no-repeat;
+	}
+	
+    .header-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header-overlay-title {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 15vw;
+        transform: translateY(-50%);
+        font-weight: bold;
+        letter-spacing: 1vw;
+        color: white;
+    }
+    
+    .info {
+        width: 100%;
+        color: white;
+        position: relative;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px 0px;
+    }
+    
+    .info-box, .info-box-1 {
+        padding: 20px 10%;
+        transition: background-color 0.5s;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .info-box:hover, .info-box-1:hover, .info-box:active, .info-box-1:active {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+    }
+    
+    .info-box-title, .info-box-descr {
+        padding: 10px 10px;
+    }
+    
+    .info-box-title {
+        text-align: center;
+        font-size: 5vw;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .info-box-descr {
+        font-size: 2.65vw;
+        letter-spacing: 2px;
+    }
+    
+    .footer {
+        color: white;
+        text-align: center;
+        font-size: 0.9vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+	.header {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-image: url("https://images3.alphacoders.com/103/1033561.jpg");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	
+    .header-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header-overlay-title {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        font-size: 100px;
+        transform: translate(0%, -50%);
+        font-weight: bold;
+        letter-spacing: 13px;
+        color: white;
+    }
+    
+    .info {
+        width: 100%;
+        color: white;
+        position: relative;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px 0px;
+    }
+    
+    .info-box, .info-box-1 {
+        width: 40%;
+        padding: 50px;
+        transition: background-image 1s;
+    }
+    
+    .info-box {
+        margin: auto auto auto 0px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0));
+    }
+    
+    .info-box-1 {
+        margin: auto 0px auto auto;
+        background-image: linear-gradient(to left, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0));
+    }
+    
+    .info-box-title, .info-box-descr {
+        padding: 10px 10px;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    
+    .info-box-title {
+        font-size: 50px;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .info-box-descr {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    
+    .footer {
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        letter-spacing: 2px;
+    }
+}

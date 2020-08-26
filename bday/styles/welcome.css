@@ -1,0 +1,84 @@
+:root {
+    --initial-color: #9d9d9d;
+}
+
+::placeholder {
+    color: #ebebeb;
+}
+
+body {
+    background-color: var(--initial-color);
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.welcome-container {
+    position: absolute;
+    margin-top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    z-index: 3;
+}
+
+.welcome-text {
+    font-family: monospace;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    opacity: 1;
+    animation: welcomeBoxOpacity 1.5s 1;
+}
+
+@keyframes welcomeBoxOpacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#welcomeInput, #welcomeInput2 {
+    font-family: monospace;
+    font-size: 50px;
+    color: black;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    text-align: left;
+}
+
+#welcomeInput {
+    min-width: 10ch;
+}
+
+#welcomeInput2 {
+    min-width: 4ch;
+}
+
+#welcomeInput:focus, #welcomeInput2:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.welcome-button {
+    margin-top: 30px;
+    font-family: monospace;
+    font-size: 35px;
+    background-color: black;
+    color: #ebebeb;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.welcome-button:hover, .welcome-button:active {
+    background-color: #ebebeb;
+    color: black;
+}

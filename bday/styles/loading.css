@@ -1,0 +1,18 @@
+.loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 0px;
+    height: 0px;
+    border-radius: 50% 50%;
+}
+
+.loading-container-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+    transition: transform 0.5s;
+}

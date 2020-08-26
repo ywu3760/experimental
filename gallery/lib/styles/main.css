@@ -1,0 +1,11 @@
+body {
+    background-color: #fde9ec;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 48px;
+}
